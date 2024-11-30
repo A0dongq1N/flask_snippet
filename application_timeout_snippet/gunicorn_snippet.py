@@ -10,5 +10,6 @@ def hello_world():
 
 
 if __name__ == '__main__':
+    # 使用gunicorn设置应用超时时间
     # gunicorn -w 4 -b 127.0.0.1:8000 --timeout 5 gunicorn_snippet:app
     app.run(debug=False)
